@@ -9,6 +9,8 @@ For the following project we assume a **ItsyBitsy 2040** board and a compatible 
 - (**recommended**) A 500-1k µF capacitor across Volt and Ground terminals, to buffer sudden changes in the current drawn by the strip
 - (**recommended**) A 300-500 Ohm resistor on the Data line, to prevent voltage spikes
 
+Warning: The source code declares a *20 leds strip*. Be sure to change the `NUM_LEDS` constant before compiling.
+
 ## Connections schema
 
 The ws2812 IC is compatible with 5V *OR* 3.3V current, always refer to the provided documentation. For this project, we use a 5V NeoPixel strip, and the pin connections are:
